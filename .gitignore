@@ -136,6 +136,10 @@ dist
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+.omc
+.omx
+**/.omc/
+**/.omx/
 
 # Vite files
 vite.config.js.timestamp-*

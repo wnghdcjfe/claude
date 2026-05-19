@@ -1,0 +1,29 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
+@import "tailwindcss";
+
+:root {
+  --foreground: #2a1f17;
+}
+
+@theme inline {
+  --color-foreground: var(--foreground);
+  --font-sans: "Pretendard Variable", Pretendard, ui-sans-serif, system-ui,
+    -apple-system, "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  background-color: #fff7ee;
+  background-image:
+    radial-gradient(at 20% 0%, #fff1dc 0px, transparent 55%),
+    radial-gradient(at 85% 10%, #ffe1c8 0px, transparent 50%),
+    radial-gradient(at 50% 100%, #ffd6b8 0px, transparent 55%),
+    linear-gradient(180deg, #fff7ee 0%, #ffe7d2 100%);
+  background-attachment: fixed;
+}

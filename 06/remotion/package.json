@@ -1,0 +1,22 @@
+{
+  "name": "md2short-remotion",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Remotion composition for MD2Short — TechExplainer 1080x1920 30fps",
+  "scripts": {
+    "render": "remotion render src/index.ts TechExplainer",
+    "studio": "remotion studio src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "typescript": "^5.4.0"
+  }
+}
