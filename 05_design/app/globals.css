@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+body {
+  background-color: #f7f7f7;
+  color: #222222;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Airbnb nav states ── */
+.nav-item {
+  color: #6a6a6a;
+  transition: background-color 0.15s, color 0.15s;
+}
+.nav-item:hover {
+  background-color: #f7f7f7;
+  color: #222222;
+}
+.nav-item-active {
+  background-color: #fff0f3;
+  color: #ff385c;
+}
+
+/* ── Airbnb card (hover → single shadow tier) ── */
+.ab-card {
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  transition: box-shadow 0.2s ease;
+}
+.ab-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.02) 0 0 0 1px,
+    rgba(0, 0, 0, 0.04) 0 2px 6px 0, rgba(0, 0, 0, 0.1) 0 4px 8px 0;
+}
+
+/* ── Airbnb input (1px hairline → 2px ink on focus) ── */
+.ab-input {
+  width: 100%;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #222222;
+  background: #ffffff;
+  outline: none;
+  font-family: inherit;
+  transition: border-color 0.15s, border-width 0.15s, padding 0.15s;
+  box-sizing: border-box;
+}
+.ab-input:focus {
+  border-color: #222222;
+  border-width: 2px;
+  padding: 11px 13px;
+}
+.ab-input::placeholder {
+  color: #929292;
+}
+select.ab-input {
+  cursor: pointer;
+}
+textarea.ab-input {
+  resize: none;
+}
+
+/* ── Rausch primary button ── */
+.btn-rausch {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background-color: #ff385c;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 0 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  height: 40px;
+  transition: background-color 0.15s;
+  white-space: nowrap;
+  font-family: inherit;
+}
+.btn-rausch:hover:not(:disabled) {
+  background-color: #e00b41;
+}
+.btn-rausch:disabled {
+  background-color: #ffd1da;
+  cursor: not-allowed;
+}
+
+/* ── Outlined secondary button ── */
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background-color: #ffffff;
+  color: #222222;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  padding: 0 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  height: 40px;
+  transition: background-color 0.15s;
+  white-space: nowrap;
+  font-family: inherit;
+}
+.btn-outline:hover {
+  background-color: #f7f7f7;
+}
+
+/* ── Ghost / text button ── */
+.btn-ghost {
+  background: transparent;
+  border: none;
+  color: #6a6a6a;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 8px 12px;
+  transition: color 0.15s;
+  text-decoration: underline;
+  font-family: inherit;
+}
+.btn-ghost:hover {
+  color: #222222;
+}
+
+/* ── Sidebar logout link ── */
+.logout-btn {
+  color: #6a6a6a;
+  transition: background-color 0.15s, color 0.15s;
+  border-radius: 8px;
+}
+.logout-btn:hover {
+  background-color: #f7f7f7;
+  color: #222222;
+}
