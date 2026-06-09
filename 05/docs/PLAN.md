@@ -143,7 +143,7 @@ P0(핵심) + P1(추가) 전체 스코프를 7단계 페이즈로 구현.
 
 - [ ] `npx create-next-app@latest` (TypeScript, Tailwind, App Router, ESLint)
 - [ ] 패키지 설치: `mongoose`, `zustand`, `@dnd-kit/core`, `@dnd-kit/sortable`, `@dnd-kit/utilities`, `fractional-indexing`
-- [ ] `.env.local` 에 `MONGODB_URI` 설정
+- [ ] `.env` 에 `MONGODB_URI` 설정
 - [ ] `lib/mongodb.ts` — Mongoose 연결 캐싱 (Next.js HMR 대응)
 - [ ] `lib/fractionalIndex.ts` — `generateKeyBetween` 래퍼
 - [ ] `store/index.ts` + 슬라이스 뼈대 3개(`todoSlice`, `weeklySlice`, `goalSlice`) 생성
